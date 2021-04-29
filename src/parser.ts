@@ -338,6 +338,7 @@ export class Parser {
 			
 			case "lua":
 				this.setCommentFormat("--", "--[[", "]]");
+				this.highlightJSDoc = true;
 				break;
 
 			case "elm":
